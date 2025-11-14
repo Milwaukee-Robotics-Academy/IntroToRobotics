@@ -102,8 +102,8 @@ resistance to the force.
     need to push the throttle more to maintain the same speed on the hill. If 
     you don't push the throttle more, you'll slow down.
 
-First movements
----------------
+First movements - EXERCISE
+--------------------------
 
 .. note:: 
 
