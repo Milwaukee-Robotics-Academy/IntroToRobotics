@@ -1,7 +1,8 @@
-The Encoders
-============
+.. comment out for later
+    The Encoders
+    ============
 
-    .. comment out for later
+
     In the last lesson we mentioned *encoders*. What are they and what do they do?
 
     Encoders are sensors which measure how far each motor (and thus each wheel) has
