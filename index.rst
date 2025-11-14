@@ -21,14 +21,14 @@ The XRP platform is part of WPI's global STEM education initiative,
 which will bring inspiration and possibility to STEM education in 
 ways that make it available to all. 
 
+.. Comment out for now. not using
+   .. toctree::
+      :maxdepth: 1
+      :hidden:
+      :caption: Course information
 
-.. toctree::
-   :maxdepth: 1
-   :hidden:
-   :caption: Course information
-
-   course/course_info/index
-   course/course_info/getting_help
+      course/course_info/index
+      course/course_info/getting_help
 
 .. toctree:: 
    :maxdepth: 1
