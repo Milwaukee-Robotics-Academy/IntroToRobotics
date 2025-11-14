@@ -71,20 +71,7 @@ ways that make it available to all.
 
    course/measuring_distance/index
    course/measuring_distance/intro
-   course/measuring_distance/obstacle_avoidance
-   course/measuring_distance/locate_object
 
-.. toctree:: 
-   :maxdepth: 1
-   :hidden:
-   :caption: Robot Control
-
-   course/robot_control/index
-   course/robot_control/intro_to_robot_control
-   course/robot_control/distance_tracker
-   course/robot_control/intro_to_prop_control
-   course/robot_control/prop_distance_tracker
-   course/robot_control/wall_following
 
 .. toctree:: 
    :maxdepth: 1
@@ -93,14 +80,8 @@ ways that make it available to all.
    
    course/line_following/index
    course/line_following/understanding_the_sensor
-   course/line_following/stopping_at_a_line
-   course/line_following/staying_in_the_circle
-   course/line_following/sumo
    course/line_following/on_off_control
    course/line_following/proportional_control
-   course/line_following/proportional_control_with_two_sensors
-   course/line_following/stopping_at_intersection
-   course/line_following/parking_garage
 
 
 .. toctree:: 
@@ -122,16 +103,21 @@ ways that make it available to all.
 
    course/delivery_challenge/index
 
+.. toctree:: 
+   :maxdepth: 1
+   :titlesonly:
+   :caption: SumoBots Challenge!
+   :hidden:
+
+   course/line_following/sumo
+
 
 .. toctree:: 
    :maxdepth: 1
    :hidden:
-   :caption: Appendix 1: Using the XRP Web Server
+   :caption: Appendix 1: Other Activities
 
-   course/webserver/webserver_intro
-   course/webserver/dashboard
-   course/webserver/remote-control
-   course/webserver/buttons
+   course/line_following/parking_garage
 
 
 .. toctree:: 
