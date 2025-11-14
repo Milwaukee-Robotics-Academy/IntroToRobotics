@@ -54,23 +54,20 @@ ways that make it available to all.
    :maxdepth: 1
    :hidden:
    :caption: Challenge 1: Shape Drawing
+
    course/driving/drawing_shapes
 
 .. toctree:: 
    :maxdepth: 1
    :hidden:
    :caption: Challenge 2: Parking Challenge
+
    course/driving/parking
 
 .. toctree:: 
    :maxdepth: 1
    :hidden:
    :caption: Sensors and Feedback
-
-.. toctree:: 
-   :maxdepth: 1
-   :hidden:
-   :caption: Measuring Distances
 
    course/measuring_distance/index
    course/measuring_distance/intro
