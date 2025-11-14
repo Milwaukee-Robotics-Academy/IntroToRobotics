@@ -35,7 +35,6 @@ ways that make it available to all.
    :hidden:
    :caption: Introduction to the XRP
 
-   course/XRPIntro/index
    course/XRPIntro/whatis
 
 .. toctree:: 
