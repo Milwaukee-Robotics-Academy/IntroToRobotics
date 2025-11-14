@@ -37,9 +37,6 @@ ways that make it available to all.
 
    course/XRPIntro/index
    course/XRPIntro/whatis
-   course/XRPIntro/building
-   course/XRPIntro/installing_tools
-
 
 .. toctree:: 
    :maxdepth: 1
