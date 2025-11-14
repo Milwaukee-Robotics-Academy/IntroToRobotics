@@ -125,7 +125,7 @@ ways that make it available to all.
    :caption: Join a team Today!
    :hidden:   
 
-   course_info/about_mra
+   course/course_info/about_mra
 
 Indices and tables
 ==================
