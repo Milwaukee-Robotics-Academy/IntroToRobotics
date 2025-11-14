@@ -42,8 +42,7 @@ ways that make it available to all.
    :maxdepth: 1
    :hidden:
    :caption: Robot Driving
- 
-   course/driving/index
+  
    course/driving/understanding_your_robots_drivetrain
    course/driving/basic_robot_driving
    course/driving/driving_a_distance
