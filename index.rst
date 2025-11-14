@@ -49,9 +49,25 @@ ways that make it available to all.
    course/driving/calling_drive_functions
    course/driving/helpful_drivetrain_functions
    course/driving/driving_with_geometry
-   course/driving/waiting_for_button_input
+
+
+.. toctree:: 
+   :maxdepth: 1
+   :hidden:
+   :caption: Challenge 1: Shape Drawing
+   course/driving/drawing_shapes
+
+
+.. toctree:: 
+   :maxdepth: 1
+   :hidden:
+   :caption: Challenge 2: Parking Challenge
    course/driving/parking
-   course/driving/differential_steering
+
+.. toctree:: 
+   :maxdepth: 1
+   :hidden:
+   :caption: Sensors and Feedback
 
 
 .. toctree:: 
