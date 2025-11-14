@@ -122,10 +122,10 @@ ways that make it available to all.
 
 .. toctree:: 
    :maxdepth: 1
-   :caption: Issues
+   :caption: Join a team Today!
    :hidden:   
 
-   `Report course issues <https://github.com/Open-STEM/IntroToRoboticsV2/issues>`_
+   course_info/about_mra
 
 Indices and tables
 ==================
