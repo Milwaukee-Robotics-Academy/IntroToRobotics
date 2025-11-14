@@ -50,13 +50,11 @@ ways that make it available to all.
    course/driving/helpful_drivetrain_functions
    course/driving/driving_with_geometry
 
-
 .. toctree:: 
    :maxdepth: 1
    :hidden:
    :caption: Challenge 1: Shape Drawing
    course/driving/drawing_shapes
-
 
 .. toctree:: 
    :maxdepth: 1
@@ -69,7 +67,6 @@ ways that make it available to all.
    :hidden:
    :caption: Sensors and Feedback
 
-
 .. toctree:: 
    :maxdepth: 1
    :hidden:
@@ -79,7 +76,6 @@ ways that make it available to all.
    course/measuring_distance/intro
    course/measuring_distance/obstacle_avoidance
    course/measuring_distance/locate_object
-
 
 .. toctree:: 
    :maxdepth: 1
@@ -92,7 +88,6 @@ ways that make it available to all.
    course/robot_control/intro_to_prop_control
    course/robot_control/prop_distance_tracker
    course/robot_control/wall_following
-   
 
 .. toctree:: 
    :maxdepth: 1
