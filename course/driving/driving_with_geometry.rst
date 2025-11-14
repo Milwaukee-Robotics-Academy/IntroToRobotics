@@ -112,36 +112,3 @@ can now write a function to trace any regular polygon!
         .. image:: media/polygon-blockly.png
             :width: 450
 
-Pinwheel
---------
-
-Now we know how to easily draw any polygon, but we can take it one step further and draw a polygon pinwheel.
-This pattern consists of several polygons extending out from a center point. Your XRP can execute this
-by tracing several polygons consecutively and turning slightly between each new polygon. A pinwheel of 3 squares should look 
-something like this:
-
-.. image:: media/pinwheel-square.jpg
-    :width: 240
-
-Programming this may seem like a daunting task, but it is actually quite simple. Every time you want to trace a piece
-of the pinwheel, you just need to call your polygon function from before and then turn your robot slightly. We can calculate the measure of this
-turn by dividing 360 degrees by the number of polygons we are tracing in order to keep even spacing between each polygon.
-Repeat this process as many times as there are polygons in the pinwheel, and your pattern will be finished!
-
-.. tab-set::
-
-    .. tab-item:: Python
-
-        .. code-block:: python
-
-            from XRPLib.defaults import *
-
-            def pinwheel(sideLength, numSides, numShapes):
-                for i in range(numShapes):
-                    polygon(sideLength, numSides)
-                    drivetrain.turn(360 / numShapes, 0.5)
-
-    .. tab-item:: Blockly
-
-        .. image:: media/pinwheel-blockly.png 
-            :width: 450
