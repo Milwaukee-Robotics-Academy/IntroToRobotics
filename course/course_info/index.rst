@@ -1,6 +1,7 @@
 Welcome to Introduction to Robotics
 ===================================
-Welcome to the WPI Global STEM Education Initiative Introduction to Robotics 
+
+This course is modified by Milwaukee Robotics Academy based on the WPI Global STEM Education Initiative Introduction to Robotics 
 course using the new XRP Robots. This course teaches the basics of robotics and programming
 using two programming languages: Blockly and Python. For new programmers, we recommend
 that you start with Blockly 
