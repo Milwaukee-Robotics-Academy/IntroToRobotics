@@ -1,32 +1,33 @@
 The Encoders
 ============
 
-In the last lesson we mentioned *encoders*. What are they and what do they do?
+    .. comment out for later
+    In the last lesson we mentioned *encoders*. What are they and what do they do?
 
-Encoders are sensors which measure how far each motor (and thus each wheel) has
-rotated. We mentioned that our motors aren't perfect, so when we tell them to go
-a certain effort we don't know how fast it is actually rotating. Encoders 
-measure exactly what the motor is doing and report this information back to the 
-XRP.
+    Encoders are sensors which measure how far each motor (and thus each wheel) has
+    rotated. We mentioned that our motors aren't perfect, so when we tell them to go
+    a certain effort we don't know how fast it is actually rotating. Encoders 
+    measure exactly what the motor is doing and report this information back to the 
+    XRP.
 
-.. image:: media/blog017-image001-disks-resolution.jpg
+    .. image:: media/blog017-image001-disks-resolution.jpg
 
-An encoder uses a disk like the one above with alternating clear and black 
-squares. The disk is attached to the output shaft of the motor. A small light 
-is shined through the edge of the disk, and a sensor on the other side sees the
-light. When a black part of the disk is in front of the light, the sensor sees
-nothing. When a clear part of the disk is in front of the light, the sensor can
-see the light. As the disk rotates, the sensor constantly switches from seeing 
-and not seeing the light. The XRP can automatically count how many times it has
-switched between seeing and not seeing the light, and can use this to calculate 
-how far the wheel has moved.
+    An encoder uses a disk like the one above with alternating clear and black 
+    squares. The disk is attached to the output shaft of the motor. A small light 
+    is shined through the edge of the disk, and a sensor on the other side sees the
+    light. When a black part of the disk is in front of the light, the sensor sees
+    nothing. When a clear part of the disk is in front of the light, the sensor can
+    see the light. As the disk rotates, the sensor constantly switches from seeing 
+    and not seeing the light. The XRP can automatically count how many times it has
+    switched between seeing and not seeing the light, and can use this to calculate 
+    how far the wheel has moved.
 
-The size of the black and clear squares determines how *precise* the encoder is.
-As the squares get smaller, the light switches more times for the same amount of
-rotations of the wheel, and thus we can more precisely measure the distance. The
-downside of having really tiny squares is that the XRP's processor needs to work
-harder to keep up with counting all the switches. In the image above you can see
-some disks with different levels of precision.
+    The size of the black and clear squares determines how *precise* the encoder is.
+    As the squares get smaller, the light switches more times for the same amount of
+    rotations of the wheel, and thus we can more precisely measure the distance. The
+    downside of having really tiny squares is that the XRP's processor needs to work
+    harder to keep up with counting all the switches. In the image above you can see
+    some disks with different levels of precision.
 
 .. tip:: 
 
@@ -77,48 +78,49 @@ computer to display at once on the screen.
     Try running this code to see what happens. Spin the left wheel of the XRP
     by hand and notice how the number changes.
 
-Calculating distance
---------------------
+.. commenting out for later
+    Calculating distance
+    --------------------
 
-Let's learn a bit about how the XRP uses the encoder to calculate how far the 
-robot has moved.
+    Let's learn a bit about how the XRP uses the encoder to calculate how far the 
+    robot has moved.
 
-The XRP knows the diameter of the robot's wheels; every XRP has the same wheels!
+    The XRP knows the diameter of the robot's wheels; every XRP has the same wheels!
 
-If a car's wheel rolls on the ground one full revolution, how far does the car
-move? The car moves by one *circumference* of the circle:
+    If a car's wheel rolls on the ground one full revolution, how far does the car
+    move? The car moves by one *circumference* of the circle:
 
-.. image:: media/Circle-Graphic-1024x576-2.png
+    .. image:: media/Circle-Graphic-1024x576-2.png
 
-.. tip:: 
+    .. tip:: 
 
-    Reminder that the circumference of a circle is the distance around it.
+        Reminder that the circumference of a circle is the distance around it.
 
-    The circumference is calculated as :math:`C = \pi \cdot d`, where :math:`d`
-    is the *diameter* of the circle.
+        The circumference is calculated as :math:`C = \pi \cdot d`, where :math:`d`
+        is the *diameter* of the circle.
 
-If a car wheel (which is a circle with a circumference of 100 inches) rotates 5
-times, how far does the car go? How would you find that?
+    If a car wheel (which is a circle with a circumference of 100 inches) rotates 5
+    times, how far does the car go? How would you find that?
 
-.. image:: media/P316_1-1.png
- 
-You would rotate the wheel once, and find that it has traveled 100 inches,
-because the wheel would trace out it's circumference on the ground. Then, you
-would rotate it a second time, and see it move another 100 inches. Then a third,
-a fourth and a fifth time, and see the wheel has traced out it's circumference
-on the ground 5 times. 
-
-The amount it has traveled is 5 times the circumference. This can be used for
-any number of rotations. If you rotate the wheel 3 times, you would move forward
-3 times the circumference (300 inches), if you rotated it 1 and a half times,
-you would move forward one and a half times the circumference (150 inches). 
-
-.. math:: 
+    .. image:: media/P316_1-1.png
     
-    d\text{ cm} = (\text{number of rotations}) \cdot (\text{circumference})
+    You would rotate the wheel once, and find that it has traveled 100 inches,
+    because the wheel would trace out it's circumference on the ground. Then, you
+    would rotate it a second time, and see it move another 100 inches. Then a third,
+    a fourth and a fifth time, and see the wheel has traced out it's circumference
+    on the ground 5 times. 
 
-The XRP uses this equation to automatically calculate how far the wheels have 
-moved in centimeters using the encoders.
+    The amount it has traveled is 5 times the circumference. This can be used for
+    any number of rotations. If you rotate the wheel 3 times, you would move forward
+    3 times the circumference (300 inches), if you rotated it 1 and a half times,
+    you would move forward one and a half times the circumference (150 inches). 
+
+    .. math:: 
+        
+        d\text{ cm} = (\text{number of rotations}) \cdot (\text{circumference})
+
+    The XRP uses this equation to automatically calculate how far the wheels have 
+    moved in centimeters using the encoders.
 
 Driving a distance (again)
 --------------------------

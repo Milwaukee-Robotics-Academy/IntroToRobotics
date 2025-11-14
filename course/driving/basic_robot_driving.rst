@@ -1,8 +1,8 @@
 Getting the Robot Moving
 ========================
 
-Basic driving
--------------
+Basic driving - EXERCISE
+------------------------
 
 In the last lesson we learned how to set the effort of each of your robot's 
 motors individually. Since both of the motors make up the robot's drivetrain,

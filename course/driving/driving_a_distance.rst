@@ -52,8 +52,8 @@ straight, unlike when using the :code:`set_effort` function.
     If you want the robot to go backwards, use a negative speed value just like
     you did with the effort value.
 
-Driving a distance
-------------------
+Driving a distance - EXERCISE
+-----------------------------
 
 We know that we can ask the wheels to spin at a certain speed using a function, 
 but what if we want to make the robot drive a certain distance?
