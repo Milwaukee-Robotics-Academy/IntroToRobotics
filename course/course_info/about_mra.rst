@@ -2,7 +2,7 @@ Milwaukee Robotics Academy
 =================
 
 
-First Robotics
+FIRST Robotics
 --------------
 
 About FIRST Robotics:
