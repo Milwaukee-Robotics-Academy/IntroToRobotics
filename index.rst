@@ -126,7 +126,7 @@ ways that make it available to all.
    :hidden:   
 
    course/course_info/about_mra
-   `Link Sign Up to Join a team! <https://www.milwaukeeroboticsacademy.org/programs>`_
+   Sign Up to Join a team! <https://www.milwaukeeroboticsacademy.org/programs>
 
 Indices and tables
 ==================
