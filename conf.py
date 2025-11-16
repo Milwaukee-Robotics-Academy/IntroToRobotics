@@ -32,7 +32,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = "sphinx_rtd_theme"
 html_theme_options = {
-    'prev_next_buttons_location': 'top'
+    'prev_next_buttons_location': 'both'
 }
 html_static_path = ['_static']
 master_doc = 'index'
