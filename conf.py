@@ -15,6 +15,7 @@ release = '2023.0'
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
+    'sphinx_new_tab_link',
     "sphinx_design",
     "sphinxcontrib.youtube",
     "sphinxcontrib.video",
@@ -35,8 +36,3 @@ html_theme_options = {
 }
 html_static_path = ['_static']
 master_doc = 'index'
-
-extensions = [
-    'sphinx_new_tab_link',
-    # ... other extensions
-]
