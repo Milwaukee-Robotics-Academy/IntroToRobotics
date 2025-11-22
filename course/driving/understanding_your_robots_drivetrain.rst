@@ -115,7 +115,7 @@ check that your XRP itself is working properly.
 
 .. admonition:: Try it out
 
-    Create a new file in the IDE called :code:`spin_wheels.py`. Add the 
+    Create a new file in the IDE called :code:`robot_test.py`. Add the 
     following code to it:
 
     .. code-block:: python
