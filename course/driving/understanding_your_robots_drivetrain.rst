@@ -121,8 +121,10 @@ check that your XRP itself is working properly.
     .. code-block:: python
 
         from XRPLib.defaults import *
+        from time import sleep
 
         left_motor.set_effort(0.5);
+        sleep(2);
 
     Run the code and see what happens.
 
