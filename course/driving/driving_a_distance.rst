@@ -231,8 +231,9 @@ Let's write our own function to drive the robot a certain distance.
     use them.
 
 .. collapse:: Solution
-    
+
     .. code-block:: python
+
         from XRPLib.defaults import *
         from time import sleep
 
@@ -244,3 +245,9 @@ Let's write our own function to drive the robot a certain distance.
         drive_to_distance(5);
         drive_to_distance(10);
         drive_to_distance(15);
+
+.. collapse:: A long code block
+
+    .. code-block:: python
+
+        print("Not really")
