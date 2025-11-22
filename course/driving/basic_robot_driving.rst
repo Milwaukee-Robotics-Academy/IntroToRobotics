@@ -22,8 +22,11 @@ effort:
         .. code-block:: python
 
             from XRPLib.defaults import *
+            from time import sleep
 
-            drivetrain.set_effort(0.5, 0.5)
+            drivetrain.set_effort(0.5, 0.5);
+            sleep(1);
+            drivetrain.stop();
 
     .. tab-item:: Blockly
 
