@@ -49,8 +49,8 @@ some new :code:`drivetrain` functions to see what the encoders are measuring:
             from time import sleep
 
             while True:
-                print(drivetrain.get_left_encoder_position())
-                sleep(1)
+                print(drivetrain.get_left_encoder_position());
+                sleep(1);
 
     .. tab-item:: Blockly
 
@@ -139,9 +139,9 @@ function to use a :code:`While` loop:
 
             def drive_distance(distance_to_drive):
                 while drivetrain.get_left_encoder_position() < distance_to_drive:
-                    drivetrain.set_speed(5, 5)
-                    time.sleep(0.01)
-                drivetrain.stop()
+                    drivetrain.set_speed(5, 5);
+                    time.sleep(0.01);
+                drivetrain.stop();
 
     .. tab-item:: Blockly
 
@@ -203,15 +203,15 @@ the number of rotations has exceeded the calculated rotation goal.
 
             def turn(target):
                 global rotations
-                differentialDrive.reset_encoder_position()
-                rotations = (target * 15.5) / (360 * 6)
+                differentialDrive.reset_encoder_position();
+                rotations = (target * 15.5) / (360 * 6);
                 if target > 0:
-                    differentialDrive.set_effort((-0.3), 0.3)
+                    differentialDrive.set_effort((-0.3), 0.3);
                 else:
-                    differentialDrive.set_effort(0.3, (-0.3))
+                    differentialDrive.set_effort(0.3, (-0.3));
                 while not math.fabs(motor1.get_position()) >= math.fabs(rotations):
                 
-                differentialDrive.stop()
+                differentialDrive.stop();
 
     .. tab-item:: Blockly
 

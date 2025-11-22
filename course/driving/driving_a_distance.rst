@@ -25,8 +25,11 @@ To set the speed of the drivetrain motors, we use a new function:
         .. code-block:: python
 
             from XRPLib.defaults import *
+            from time import sleep
 
-            drivetrain.set_speed(5, 5)
+            drivetrain.set_speed(5, 5);
+            sleep(1);
+            drivetrain.stop();
 
     .. tab-item:: Blockly
 
@@ -115,9 +118,9 @@ continuing to the next instruction in the code.
             from XRPLib.defaults import *
             from time import sleep # We need to import the speed function to use it.
 
-            drivetrain.set_speed(5, 5)
-            sleep(x) # replace x with the time you calculated to go one meter.
-            drivetrain.stop() # This is another function which makes it easy to stop the robot
+            drivetrain.set_speed(5, 5);
+            sleep(x); # replace x with the time you calculated to go one meter.
+            drivetrain.stop(); # This is another function which makes it easy to stop the robot
 
 
     .. tab-item:: Blockly
@@ -156,19 +159,19 @@ paste the code you wrote before three times, and modify it each time:
     from time import sleep
 
     # Drive 25 cm
-    drivetrain.set_speed(5, 5)
-    sleep(25 / 5) # Notice how we can write math directly in our program!
-    drivetrain.stop()
+    drivetrain.set_speed(5, 5);
+    sleep(25 / 5); # Notice how we can write math directly in our program!
+    drivetrain.stop();
 
     # Drive 50 cm
-    drivetrain.set_speed(5, 5)
-    sleep(50 / 5)
-    drivetrain.stop()
+    drivetrain.set_speed(5, 5);
+    sleep(50 / 5);
+    drivetrain.stop();
 
     # Drive 75 cm
-    drivetrain.set_speed(5, 5)
-    sleep(75 / 5)
-    drivetrain.stop()
+    drivetrain.set_speed(5, 5);
+    sleep(75 / 5);
+    drivetrain.stop();
 
 This looks pretty repetitive. Most of this code is exactly the same. In fact,
 the only change between each block is the parameter we are passing to the
@@ -188,7 +191,7 @@ Let's write our own function to drive the robot a certain distance.
             def function_name(parameter1, parameter2, parameter3):
                 # put your code here
                 # code in your function can use the parameters by name like this:
-                print(parameter1 / 5)
+                print(parameter1 / 5);
 
         In this example function, there are three parameters. Functions can have as 
         many or as few parameters as you want, or even have no parameters at all.

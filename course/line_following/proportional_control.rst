@@ -57,7 +57,7 @@ So, we can obtain error value with the following code:
 
         .. code-block:: python
 
-            error = reflectance.get_left() - 0.5
+            error = reflectance.get_left() - 0.5;
 
     .. tab-item:: Blockly
 
@@ -81,9 +81,9 @@ follows:
             from time import sleep
 
             while True:
-                error = reflectance.get_left() - 0.5
-                print("Error: ", error)
-                sleep(0.1) # This sleep makes the loop run 10 times every second
+                error = reflectance.get_left() - 0.5;
+                print("Error: ", error);
+                sleep(0.1); # This sleep makes the loop run 10 times every second
 
     .. tab-item:: Blockly
 

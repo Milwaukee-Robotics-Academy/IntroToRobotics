@@ -60,9 +60,9 @@ Consider the following example code:
 
             while True:
                 if drivetrain.get_left_encoder_position() > 20:
-                    print("Left encoder is greater than 20 cm")
+                    print("Left encoder is greater than 20 cm");
                 else:
-                    print("Left encoder is less than 20 cm")
+                    print("Left encoder is less than 20 cm");
 
     .. tab-item:: Blockly
 

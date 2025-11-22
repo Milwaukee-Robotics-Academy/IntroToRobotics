@@ -19,9 +19,9 @@ has a built in function which will wait for the button to be pressed for you.
             from XRPLib.defaults import *
             from time import sleep
 
-            board.wait_for_button()
-            sleep(1)
-            drivetrain.straight(20)
+            board.wait_for_button();
+            sleep(1);
+            drivetrain.straight(20);
 
     .. tab-item:: Blockly
 
@@ -39,7 +39,7 @@ without waiting for it:
 
 .. code-block:: python
 
-    board.is_button_pressed()
+    board.is_button_pressed();
 
 You could use this function as the *condition* for a :code:`while` loop if you
 wanted to do something more complicated with the button than just waiting for

@@ -34,11 +34,11 @@ three times and turn 120 degrees in between each drive straight.
 
             from XRPLib.defaults import *
 
-            differentialDrive.straight(30, 0.5)
-            differentialDrive.turn(120, 0.5)
-            differentialDrive.straight(30, 0.5)
-            differentialDrive.turn(120, 0.5)
-            differentialDrive.straight(30, 0.5)
+            differentialDrive.straight(30, 0.5);
+            differentialDrive.turn(120, 0.5);
+            differentialDrive.straight(30, 0.5);
+            differentialDrive.turn(120, 0.5);
+            differentialDrive.straight(30, 0.5);
 
     .. tab-item:: Blockly
 
@@ -61,13 +61,13 @@ programming our robot to drive straight for 30 cm four times and turn 90 degrees
 
             from XRPLib.defaults import *
 
-            drivetrain.straight(30, 0.5)
-            drivetrain.turn(90, 0.5)
-            drivetrain.straight(30, 0.5)
-            drivetrain.turn(90, 0.5)
-            drivetrain.straight(30, 0.5)
-            drivetrain.turn(90, 0.5)
-            drivetrain.straight(30, 0.5)
+            drivetrain.straight(30, 0.5);
+            drivetrain.turn(90, 0.5);
+            drivetrain.straight(30, 0.5);
+            drivetrain.turn(90, 0.5);
+            drivetrain.straight(30, 0.5);
+            drivetrain.turn(90, 0.5);
+            drivetrain.straight(30, 0.5);
 
     .. tab-item:: Blockly
 
@@ -104,8 +104,8 @@ can now write a function to trace any regular polygon!
 
             def polygon(sideLength, numSides):
                 for i in range(int(numSides)):
-                    differentialDrive.turn((360 / numSides), 0.5)
-                    differentialDrive.straight(sideLength, 0.5)
+                    differentialDrive.turn((360 / numSides), 0.5);
+                    differentialDrive.straight(sideLength, 0.5);
 
     .. tab-item:: Blockly
 

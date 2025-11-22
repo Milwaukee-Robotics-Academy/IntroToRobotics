@@ -25,8 +25,8 @@ effort:
             from time import sleep
 
             drivetrain.set_effort(0.5, 0.5);
-            sleep(1);
-            drivetrain.stop();
+            sleep(1); #wait 1 second
+            drivetrain.stop(); # This is another function which makes it easy to stop the robot
 
     .. tab-item:: Blockly
 

@@ -122,7 +122,7 @@ check that your XRP itself is working properly.
 
         from XRPLib.defaults import *
 
-        left_motor.set_effort(0.5)
+        left_motor.set_effort(0.5);
 
     Run the code and see what happens.
 

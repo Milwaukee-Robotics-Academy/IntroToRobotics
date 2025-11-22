@@ -64,7 +64,7 @@ Implementation
 
         .. code-block:: python
 
-            error = reflectance.get_left() - reflectance.get_right()
+            error = reflectance.get_left() - reflectance.get_right();
 
     .. tab-item:: Blockly
 
@@ -118,12 +118,12 @@ And so, our final code is as follows:
             from XRPLib.defaults import *
 
             # Try different values for KP and base_effort to get things working smoothly
-            KP = 1
-            base_effort = 0.5
+            KP = 1;
+            base_effort = 0.5;
 
             while True:
-                error = reflectance.get_left() - reflectance.get_right()
-                drivetrain.set_effort(base_effort - KP * error, base_effort + KP * error)
+                error = reflectance.get_left() - reflectance.get_right();
+                drivetrain.set_effort(base_effort - KP * error, base_effort + KP * error);
     
     .. tab-item:: Blockly
         
