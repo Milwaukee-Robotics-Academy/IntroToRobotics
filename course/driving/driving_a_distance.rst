@@ -27,9 +27,10 @@ To set the speed of the drivetrain motors, we use a new function:
             from XRPLib.defaults import *
             from time import sleep
 
-            drivetrain.set_speed(5, 5);
-            sleep(1);
-            drivetrain.stop();
+            board.wait_for_button();
+            drivetrain.set_speed(5, 5); #Setting SPEED, not effort
+            sleep(2); # wait 2 seconds  
+            drivetrain.stop(); #stop driving
 
     .. tab-item:: Blockly
 
@@ -148,7 +149,7 @@ continuing to the next instruction in the code.
 This code you wrote is pretty useful, but what if you wanted to drive other 
 distances?
 
-Let's say that we want to drive three distances in a row: 25, 50, and 75 cm.
+Let's say that we want to drive three distances in a row: 5, 10, and 15 cm.
 How could we program the robot to do this? The easy solution is to copy and 
 paste the code you wrote before three times, and modify it each time:
 
@@ -158,19 +159,19 @@ paste the code you wrote before three times, and modify it each time:
     from XRPLib.defaults import *
     from time import sleep
 
-    # Drive 25 cm
+    # Drive 5 cm
     drivetrain.set_speed(5, 5);
-    sleep(25 / 5); # Notice how we can write math directly in our program!
+    sleep(5 / 5); # Notice how we can write math directly in our program!
     drivetrain.stop();
 
-    # Drive 50 cm
+    # Drive 10 cm
     drivetrain.set_speed(5, 5);
-    sleep(50 / 5);
+    sleep(10 / 5);
     drivetrain.stop();
 
-    # Drive 75 cm
+    # Drive 15 cm
     drivetrain.set_speed(5, 5);
-    sleep(75 / 5);
+    sleep(15 / 5);
     drivetrain.stop();
 
 This looks pretty repetitive. Most of this code is exactly the same. In fact,
@@ -228,3 +229,18 @@ Let's write our own function to drive the robot a certain distance.
     Define your functions towards the top of your file, underneath the 
     :code:`import` statements. This way, code later in the file will be able to 
     use them.
+
+.. collapse:: Solution
+    .. code-block:: python
+
+    from XRPLib.defaults import *
+    from time import sleep
+
+    def distance_to_drive(distance)
+            drivetrain.set_speed(5, 5);
+            sleep(distance / 5);
+            drivetrain.stop();
+    
+    drive_to_distance(5);
+    drive_to_distance(10);
+    drive_to_distance(15);

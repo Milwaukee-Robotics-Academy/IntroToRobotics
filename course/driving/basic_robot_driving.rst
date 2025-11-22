@@ -24,8 +24,9 @@ effort:
             from XRPLib.defaults import *
             from time import sleep
 
+            board.wait_for_button();
             drivetrain.set_effort(0.5, 0.5);
-            sleep(1); #wait 1 second
+            sleep(2); #wait 2 seconds
             drivetrain.stop(); # This is another function which makes it easy to stop the robot
 
     .. tab-item:: Blockly
