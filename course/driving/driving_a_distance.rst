@@ -237,13 +237,16 @@ Let's write our own function to drive the robot a certain distance.
         from XRPLib.defaults import *
         from time import sleep
 
-        def distance_to_drive(distance)
+        def distance_to_drive(distance):
                 drivetrain.set_speed(5, 5);
                 sleep(distance / 5);
                 drivetrain.stop();
-        
-        drive_to_distance(5);
-        drive_to_distance(10);
-        drive_to_distance(15);
+
+        board.wait_for_button();
+        distance_to_drive(5);
+        board.wait_for_button();
+        distance_to_drive(10);
+        board.wait_for_button();
+        distance_to_drive(15);
 
 
