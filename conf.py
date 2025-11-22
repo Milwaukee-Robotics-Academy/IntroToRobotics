@@ -17,6 +17,7 @@ release = '2023.0'
 extensions = [
     'sphinx_new_tab_link',
     "sphinx_design",
+    'sphinx_toolbox.collapse',
     "sphinxcontrib.youtube",
     "sphinxcontrib.video",
     "sphinx.ext.autosectionlabel",
