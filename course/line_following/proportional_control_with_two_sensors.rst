@@ -148,9 +148,8 @@ Here's what that looks like. Note that KP used in this video was not equal to 1:
       following cannot?
 
 .. collapse:: Proportional
-    
-        .. code-block:: python
 
+    .. code-block:: python
         from XRPLib.defaults import *
 
         # Try different values for KP and base_effort to get things working smoothly

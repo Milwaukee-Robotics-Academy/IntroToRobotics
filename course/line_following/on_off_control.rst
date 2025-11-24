@@ -50,32 +50,22 @@ code based on a *condition* (the same kind of *condition* you used in a
 
 Consider the following example code:
 
-.. tab-set::
+    .. code-block:: python
+        from XRPLib.defaults import *
 
-    .. tab-item:: Python
-
-        .. code-block:: python
-            from XRPLib.defaults import *
-
-            threshold = 0.7;
-            def is_over_line(test_value):
-                if test_value>threshold:
-                    return True;
-                else:
-                    return False;
-                    
-            while True:
-                right = reflectance.get_right();
-                if (is_over_line(right)):
-                    drivetrain.set_effort(0.1,0.3);
-                else:
-                    drivetrain.set_effort(0.3,0.1);
+        threshold = 0.7;
+        def is_over_line(test_value):
+            if test_value>threshold:
+                return True;
+            else:
+                return False;
                 
-
-    .. tab-item:: Blockly
-
-        .. image:: media/if-else.png
-            :width: 300
+        while True:
+            right = reflectance.get_right();
+            if (is_over_line(right)):
+                drivetrain.set_effort(0.1,0.3);
+            else:
+                drivetrain.set_effort(0.3,0.1);
 
     
 In this example code we just show different messages on the computer based
