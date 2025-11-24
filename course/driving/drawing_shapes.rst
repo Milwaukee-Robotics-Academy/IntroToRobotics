@@ -9,4 +9,5 @@ Now that you can drive distances, and turn, put those skills together and draw a
     robot's wheels and trace your pattern on a whiteboard.
 
 
-Select a random card, and program the shape described on it.
+.. image:: media/shapes.png
+    :width: 300
