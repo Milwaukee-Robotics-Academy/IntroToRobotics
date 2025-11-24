@@ -146,3 +146,19 @@ Here's what that looks like. Note that KP used in this video was not equal to 1:
     * Compare one sensor to two sensor line following. What bends in the black
       line is two sensor line following able to handle that one sensor line
       following cannot?
+
+.. collapse:: Proportional
+
+    .. code-block:: python
+            
+                from XRPLib.defaults import *
+
+                error = reflectance.get_left() - reflectance.get_right();
+                
+                def polygon(sideLength, numSides):
+                    for i in range(int(numSides)):
+                        drivetrain.straight(sideLength, 0.5);
+                        drivetrain.turn((360 / numSides), 0.5);
+                
+                polygon(10,4);
+

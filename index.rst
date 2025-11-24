@@ -72,6 +72,7 @@ Getting Started
    course/line_following/understanding_the_sensor
    course/line_following/on_off_control
    course/line_following/proportional_control
+   cours/line_following/proportional_control_with_two_sensors
 
 
 .. toctree:: 
