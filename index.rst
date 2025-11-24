@@ -5,7 +5,7 @@ Intro to Robotics with XRP
 Getting Started
 ---------------
 
-* XRP Code Editor <https://xrpcode.wpi.edu/>_
+* 'XRP Code Editor <https://xrpcode.wpi.edu/>'_
 
 
 
