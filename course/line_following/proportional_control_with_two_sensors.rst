@@ -118,8 +118,8 @@ And so, our final code is as follows:
             from XRPLib.defaults import *
 
             # Try different values for KP and base_effort to get things working smoothly
-            KP = 1;
-            base_effort = 0.5;
+            KP = 0.6;
+            base_effort = 0.3;
 
             while True:
                 error = reflectance.get_left() - reflectance.get_right();
@@ -148,17 +148,16 @@ Here's what that looks like. Note that KP used in this video was not equal to 1:
       following cannot?
 
 .. collapse:: Proportional
+        .. code-block:: python
 
-    .. code-block:: python
-            
-                from XRPLib.defaults import *
+        from XRPLib.defaults import *
 
-                error = reflectance.get_left() - reflectance.get_right();
-                
-                def polygon(sideLength, numSides):
-                    for i in range(int(numSides)):
-                        drivetrain.straight(sideLength, 0.5);
-                        drivetrain.turn((360 / numSides), 0.5);
-                
-                polygon(10,4);
+        # Try different values for KP and base_effort to get things working smoothly
+        KP = 0.6;
+        base_effort = 0.3;
+
+        while True:
+            error = reflectance.get_left() - reflectance.get_right();
+            drivetrain.set_effort(base_effort - KP * error, base_effort + KP * error);
+
 
