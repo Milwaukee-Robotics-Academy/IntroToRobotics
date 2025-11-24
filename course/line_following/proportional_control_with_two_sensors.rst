@@ -148,6 +148,7 @@ Here's what that looks like. Note that KP used in this video was not equal to 1:
       following cannot?
 
 .. collapse:: Proportional
+    
         .. code-block:: python
 
         from XRPLib.defaults import *
