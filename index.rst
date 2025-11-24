@@ -118,7 +118,3 @@ Getting Started
    course/course_info/about_mra
    Milwaukee Robotics Academy Signup! <https://www.milwaukeeroboticsacademy.org/programs>
 
-Indices and tables
-==================
-
-* :ref:`genindex`
