@@ -36,22 +36,22 @@ This function returns the distance, in cm, from the sensor to the nearest object
 .. note:: Try it out!
   Try writing code that checks the distance every 50 ms (0.05 seconds) and prints the output.
 
-Here's the answer:
+.. collapse:: Here's the answer:
 
-.. tab-set:: 
+  .. tab-set:: 
 
-    .. tab-item:: Python
+      .. tab-item:: Python
 
-        .. code-block:: python
+          .. code-block:: python
 
-          from XRPLib.defaults import *
-          import time
+            from XRPLib.defaults import *
+            import time
 
-          while True:
-            print(rangefinder.distance())
-            time.sleep(0.05)
+            while True:
+              print(rangefinder.distance())
+              time.sleep(0.05)
 
-    .. tab-item:: Blockly
+      .. tab-item:: Blockly
 
-        .. image:: media/printsonardistance.png
-            :width: 300
+          .. image:: media/printsonardistance.png
+              :width: 300
