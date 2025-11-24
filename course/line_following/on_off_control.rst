@@ -55,23 +55,21 @@ Consider the following example code:
     .. tab-item:: Python
 
         .. code-block:: python
-
             from XRPLib.defaults import *
 
             threshold = 0.7;
             def is_over_line(test_value):
-            if test_value>threshold:
-                return True;
-            else:
-                return False;
-
-            while True:
-                if is_over_line(reflectance.get_right()):
-                    drivetrain.set_speed(4,6);
-                elif is_over_line(reflectance.get_left()):
-                    drivetrain.set_speed(6,4);
+                if test_value>threshold:
+                    return True;
                 else:
-                    drivetrain.set_speed(5,5);
+                    return False;
+                    
+            while True:
+                right = reflectance.get_right();
+                if (is_over_line(right)):
+                    drivetrain.set_effort(0.1,0.3);
+                else:
+                    drivetrain.set_effort(0.3,0.1);
                 
 
     .. tab-item:: Blockly
