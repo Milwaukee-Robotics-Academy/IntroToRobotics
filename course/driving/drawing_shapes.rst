@@ -10,4 +10,3 @@ Now that you can drive distances, and turn, put those skills together and draw a
 
 
 .. image:: media/shapes.png
-    :width: 300
