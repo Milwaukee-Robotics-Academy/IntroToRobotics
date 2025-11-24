@@ -75,7 +75,8 @@ programming our robot to drive straight for 30 cm four times and turn 90 degrees
             :width: 300
 
 
-.. collapse:: Solution
+.. collapse:: Polygons
+
     Polygons
     --------
 
