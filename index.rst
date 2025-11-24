@@ -6,6 +6,8 @@ Getting Started
 ---------------
 
 * Please open in a new tab: `XRP Code Editor <https://xrpcode.wpi.edu/>`_.
+* Pugin the USB cable to your robot and your laptop.
+* Click on the "CONNECT XRP" button to sync with your robot.
 
 
 
