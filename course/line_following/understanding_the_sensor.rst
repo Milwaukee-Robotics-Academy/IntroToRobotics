@@ -32,12 +32,16 @@ For this lesson, we will only use the *right* sensor.
 .. code-block:: python
 
     from XRPLib.defaults import *
+    from time import sleep
 
-    # Reads the left sensor and stores the value in the variable "left"
-    left = reflectance.get_left()
+    while True:
+        # Reads the left sensor and stores the value in the variable "left"
+        left = reflectance.get_left();
+        # Reads the right sensor and stores the value in the variable "right"
+        right = reflectance.get_right();
+        print(f"Reflectance    Left: {left:.3f}    Right: {right:.3f}")
+        time.sleep(0.1)
 
-    # Reads the right sensor and stores the value in the variable "right"
-    right = reflectance.get_right()
 
 Before doing anything with a new sensor, you need to have a good understanding 
 of the values it will give you in different conditions. For the reflectance 

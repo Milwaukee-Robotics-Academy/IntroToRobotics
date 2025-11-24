@@ -66,4 +66,17 @@ clockwise.
 
     Write code to drive the robot straight for 20 centimeters and then turn 90
     degrees clockwise. Don't forget to add the 
-    :code:`from XRPLib.defaults import *` statement at the top of your program.
+:code:`from XRPLib.defaults import *` statement at the top of your program.
+
+In order to use the more advanced functions of the drivetrain, we will be using another sensor called the IMU. 
+In order to output those values, try the code below:
+
+.. code-block:: python
+
+    from XRPLib.defaults import *
+    from time import sleep
+
+    imu.calibrate()
+    while 1:
+        print(f'Roll: {imu.get_roll():.2f}      Pitch: {imu.get_pitch():.2f}     Yaw: {imu.get_yaw():.2f}')
+        time.sleep_ms(20)
