@@ -58,11 +58,21 @@ Consider the following example code:
 
             from XRPLib.defaults import *
 
+            threshold = 0.7;
+            def is_over_line(test_value):
+            if test_value>threshold:
+                return True;
+            else:
+                return False;
+
             while True:
-                if drivetrain.get_left_encoder_position() > 20:
-                    print("Left encoder is greater than 20 cm");
+                if is_over_line(reflectance.get_right()):
+                    drivetrain.set_speed(4,6);
+                elif is_over_line(reflectance.get_left()):
+                    drivetrain.set_speed(6,4);
                 else:
-                    print("Left encoder is less than 20 cm");
+                    drivetrain.set_speed(5,5);
+                
 
     .. tab-item:: Blockly
 
