@@ -1,8 +1,8 @@
-.. comment out for later
+
     The Encoders
     ============
 
-
+.. comment out for later
     In the last lesson we mentioned *encoders*. What are they and what do they do?
 
     Encoders are sensors which measure how far each motor (and thus each wheel) has
@@ -123,50 +123,51 @@ computer to display at once on the screen.
     The XRP uses this equation to automatically calculate how far the wheels have 
     moved in centimeters using the encoders.
 
-Driving a distance (again)
---------------------------
+.. commenting out for later
+    Driving a distance (again)
+    --------------------------
 
-In the last lesson you used a constant speed and a time to drive a distance. 
-Now that you know that the encoders actually measure the distance, it would be 
-better to use them for your :code:`drive_distance` function. We can modify your 
-function to use a :code:`While` loop:
+    In the last lesson you used a constant speed and a time to drive a distance. 
+    Now that you know that the encoders actually measure the distance, it would be 
+    better to use them for your :code:`drive_distance` function. We can modify your 
+    function to use a :code:`While` loop:
 
-.. tab-set:: 
+    .. tab-set:: 
 
-    .. tab-item:: Python
+        .. tab-item:: Python
 
-        .. code-block:: python
+            .. code-block:: python
 
-            def drive_distance(distance_to_drive):
-                while drivetrain.get_left_encoder_position() < distance_to_drive:
-                    drivetrain.set_speed(5, 5);
-                    time.sleep(0.01);
-                drivetrain.stop();
+                def drive_distance(distance_to_drive):
+                    while drivetrain.get_left_encoder_position() < distance_to_drive:
+                        drivetrain.set_speed(5, 5);
+                        time.sleep(0.01);
+                    drivetrain.stop();
 
-    .. tab-item:: Blockly
+        .. tab-item:: Blockly
 
-        .. image:: media/drivedistanceencoder.png
-            :width: 300
-    
+            .. image:: media/drivedistanceencoder.png
+                :width: 300
+        
 
-This code block uses a loop to constantly check if the left encoder position is
-less than the distance you want the robot to go. Once it is no longer less than 
-this distance, the loop stops running and the code moves on to the next line.
-In this case, the next line tells the robot to stop.
+    This code block uses a loop to constantly check if the left encoder position is
+    less than the distance you want the robot to go. Once it is no longer less than 
+    this distance, the loop stops running and the code moves on to the next line.
+    In this case, the next line tells the robot to stop.
 
-.. admonition:: Try it out
+    .. admonition:: Try it out
 
-    Replace your :code:`drive_distance` function with this new one. Try it out
-    next to a meter stick. Is it more or less accurate than before?
+        Replace your :code:`drive_distance` function with this new one. Try it out
+        next to a meter stick. Is it more or less accurate than before?
 
-.. admonition:: Challenge
+    .. admonition:: Challenge
 
-    This code only checks the left encoder. Since both wheels are moving the
-    same speed, this *should* be fine, but as we said, the motors aren't
-    perfect. Can you think of a way to combine both encoder values together?
+        This code only checks the left encoder. Since both wheels are moving the
+        same speed, this *should* be fine, but as we said, the motors aren't
+        perfect. Can you think of a way to combine both encoder values together?
 
-    To read the right encoder, you use
-    :code:`drivetrain.get_right_encoder_position()`
+        To read the right encoder, you use
+        :code:`drivetrain.get_right_encoder_position()`
 
 Turning to a heading
 ---------------------
