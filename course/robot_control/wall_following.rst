@@ -42,7 +42,7 @@ Here is some code that would allow your XRP to track a wall on the right side of
             kP = None
             targetDist = None
 
-            differentialDrive = DifferentialDrive.get_default_differential_drive()
+            differentialDrive = drivetrain.get_default_differential_drive()
 
             rangefinder = Rangefinder.get_default_rangefinder()
 
@@ -50,7 +50,7 @@ Here is some code that would allow your XRP to track a wall on the right side of
             kP = 0.02
             targetDist = 20
             while True:
-                differentialDrive.set_effort((0.4 + kP * ((rangefinder.distance()) - targetDist)), (0.4 + (kP * ((rangefinder.distance()) - targetDist)) * -1))
+                drivetrain.set_effort((0.4 + kP * ((rangefinder.distance()) - targetDist)), (0.4 + (kP * ((rangefinder.distance()) - targetDist)) * -1))
 
 
     .. tab-item:: Blockly

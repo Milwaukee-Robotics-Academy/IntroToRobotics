@@ -16,27 +16,27 @@ Below is an example of how to register some basic drive functions to be called w
             from XRPLib.defaults import *
 
             def forward():
-                differentialDrive.set_effort(0.5, 0.5)
+                drivetrain.set_effort(0.5, 0.5)
 
             webserver.registerForwardButton(forward)
 
             def back():
-                differentialDrive.set_effort(-0.5, -0.5)
+                drivetrain.set_effort(-0.5, -0.5)
 
             webserver.registerBackwardButton(back)
 
             def left():
-                differentialDrive.set_effort(-0.5, 0.5)
+                drivetrain.set_effort(-0.5, 0.5)
 
             webserver.registerLeftButton(left)
 
             def right():
-                differentialDrive.set_effort(0.5, -0.5)
+                drivetrain.set_effort(0.5, -0.5)
 
             webserver.registerRightButton(right)
 
             def stop():
-                differentialDrive.stop()
+                drivetrain.stop()
 
             webserver.registerStopButton(stop)
 

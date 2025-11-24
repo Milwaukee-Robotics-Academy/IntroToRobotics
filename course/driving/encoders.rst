@@ -203,15 +203,15 @@ the number of rotations has exceeded the calculated rotation goal.
 
             def turn(target):
                 global rotations
-                differentialDrive.reset_encoder_position();
+                drivetrain.reset_encoder_position();
                 rotations = (target * 15.5) / (360 * 6);
                 if target > 0:
-                    differentialDrive.set_effort((-0.3), 0.3);
+                    drivetrain.set_effort((-0.3), 0.3);
                 else:
-                    differentialDrive.set_effort(0.3, (-0.3));
+                    drivetrain.set_effort(0.3, (-0.3));
                 while not math.fabs(motor1.get_position()) >= math.fabs(rotations):
                 
-                differentialDrive.stop();
+                drivetrain.stop();
 
     .. tab-item:: Blockly
 

@@ -34,11 +34,11 @@ three times and turn 120 degrees in between each drive straight.
 
             from XRPLib.defaults import *
 
-            differentialDrive.straight(30, 0.5);
-            differentialDrive.turn(120, 0.5);
-            differentialDrive.straight(30, 0.5);
-            differentialDrive.turn(120, 0.5);
-            differentialDrive.straight(30, 0.5);
+            drivetrain.straight(30, 0.5);
+            drivetrain.turn(120, 0.5);
+            drivetrain.straight(30, 0.5);
+            drivetrain.turn(120, 0.5);
+            drivetrain.straight(30, 0.5);
 
     .. tab-item:: Blockly
 
@@ -104,8 +104,8 @@ can now write a function to trace any regular polygon!
 
             def polygon(sideLength, numSides):
                 for i in range(int(numSides)):
-                    differentialDrive.turn((360 / numSides), 0.5);
-                    differentialDrive.straight(sideLength, 0.5);
+                    drivetrain.turn((360 / numSides), 0.5);
+                    drivetrain.straight(sideLength, 0.5);
 
     .. tab-item:: Blockly
 

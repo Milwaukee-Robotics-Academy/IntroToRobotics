@@ -96,14 +96,14 @@ robot to turn to, you can set up a proportional control loop to move your measur
 
             motor1 = EncodedMotor.get_default_encoded_motor(1)
 
-            differentialDrive = DifferentialDrive.get_default_differential_drive()
+            differentialDrive = drivetrain.get_default_differential_drive()
 
             def turn(targetAngle):
                 global kP
                 kP = 0.015
                 while not (math.fabs(targetAngle - (imu.get_yaw())) < 3 and (motor1.get_speed()) < 5):
-                    differentialDrive.set_effort((((targetAngle - (imu.get_yaw())) * kP) * -1), ((targetAngle - (imu.get_yaw())) * kP))
-                differentialDrive.stop()
+                    drivetrain.set_effort((((targetAngle - (imu.get_yaw())) * kP) * -1), ((targetAngle - (imu.get_yaw())) * kP))
+                drivetrain.stop()
 
 
             turn(90)
