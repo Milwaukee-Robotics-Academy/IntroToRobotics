@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'XRP'
-copyright = '2023, Worcester Polytechnic Institute'
+copyright = '2023, Worcester Polytechnic Institute. Modified by Milwaukee Robotics Academy'
 author = 'Worcester Polytechnic Institute'
 release = '2023.0'
 
