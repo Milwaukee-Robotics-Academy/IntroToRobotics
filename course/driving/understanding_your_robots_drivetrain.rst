@@ -68,40 +68,6 @@ double the wheel track.
   :width: 300
 
 
-
-Effort
-------
-
-There are several ways we can tell the motors what to do. The most basic thing 
-we can control is the *effort* the motor should be applying.
-
-Imagine you are riding a bike on a flat surface, pedalling at a normal speed. 
-Now imagine you encounter a hill. If you keep pedalling at the same speed, you
-won't slow down when you go up the hill. However, this is not easy! You'd need 
-to pedal *harder* to go the same speed up the hill.
-
-Now instead imagine that when you get to the hill, you keep pedalling as hard as 
-you were on the flat section. You'll go up the hill slower, but you won't be as 
-tired. This is what we mean by the *effort* of the motor. You're not telling the
-motor how fast it should move, but rather how hard it should work. If you tell 
-your robot's motors to work at a constant effort, your robot's speed will change
-depending on whether it is driving on a flat surface or an inclined one.
-
-.. youtube:: z6aIVpf3qN0
-
-.. youtube:: Zcr83kcO_Pk
-
-In both videos, the robot is using the same effort. In the first video, the robot is slowly moving uphill because gravity is fighting against
-its effort. In the second video, the robot is moving quickly downhill because gravity is working in the
-same direction as the effort. The force output from the motors is the same, but the speed will depend on
-resistance to the force.
-
-.. tip:: 
-
-    Effort is also like the throttle in a car. If you're going up a hill, you 
-    need to push the throttle more to maintain the same speed on the hill. If 
-    you don't push the throttle more, you'll slow down.
-
 First movements - EXERCISE
 --------------------------
 
@@ -124,7 +90,8 @@ check that your XRP itself is working properly.
         from time import sleep
 
         left_motor.set_effort(0.5);
-        sleep(2);
+        #right_motor.set_effort(0.5);
+        sleep(1);
 
     Run the code and see what happens.
 

@@ -29,7 +29,7 @@ To set the speed of the drivetrain motors, we use a new function:
 
             board.wait_for_button();
             drivetrain.set_speed(5, 5); #Setting SPEED, not effort
-            sleep(2); # wait 2 seconds  
+            sleep(1); # wait 1 second 
             drivetrain.stop(); #stop driving
 
     .. tab-item:: Blockly
