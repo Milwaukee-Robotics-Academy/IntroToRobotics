@@ -22,7 +22,7 @@ Triangle
 --------
 
 For a triangle, the interior angles measure 60 degrees and the exterior angles measure 120 degrees.
-We can trace a triangle with side lengths of 30 cm by having our robot drive straight for 30 cm
+We can trace a triangle with side lengths of 10 cm by having our robot drive straight for 10 cm
 three times and turn 120 degrees in between each drive straight.  
 
 
@@ -51,8 +51,8 @@ Square
 ------
 
 The process for tracing a square is similar to tracing a triangle. The interior angles are 90 degrees so
-the exterior angles are also 90 degrees. Keeping a side length of 30 cm, we can trace a square by 
-programming our robot to drive straight for 30 cm four times and turn 90 degrees between each drive straight.
+the exterior angles are also 90 degrees. Keeping a side length of 10 cm, we can trace a square by 
+programming our robot to drive straight for 10 cm four times and turn 90 degrees between each drive straight.
 
 .. tab-set::
 
