@@ -23,7 +23,7 @@ Triangle
 
 For a triangle, the interior angles measure 60 degrees and the exterior angles measure 120 degrees.
 We can trace a triangle with side lengths of 30 cm by having our robot drive straight for 30 cm
-three times and turn 120 degrees in between each drive straight.
+three times and turn 120 degrees in between each drive straight.  
 
 
 .. tab-set::
@@ -33,12 +33,13 @@ three times and turn 120 degrees in between each drive straight.
         .. code-block:: python
 
             from XRPLib.defaults import *
-
-            drivetrain.straight(30, 0.5);
+            
+            board.wait_for_button();
+            drivetrain.straight(10, 0.5);
             drivetrain.turn(120, 0.5);
-            drivetrain.straight(30, 0.5);
+            drivetrain.straight(10, 0.5);
             drivetrain.turn(120, 0.5);
-            drivetrain.straight(30, 0.5);
+            drivetrain.straight(10, 0.5);
 
     .. tab-item:: Blockly
 
@@ -59,15 +60,15 @@ programming our robot to drive straight for 30 cm four times and turn 90 degrees
 
         .. code-block:: python
 
-            from XRPLib.defaults import *
-
-            drivetrain.straight(30, 0.5);
+            from XRPLib.defaults import * 
+            board.wait_for_button();
+            drivetrain.straight(10, 0.5);
             drivetrain.turn(90, 0.5);
-            drivetrain.straight(30, 0.5);
+            drivetrain.straight(10, 0.5);
             drivetrain.turn(90, 0.5);
-            drivetrain.straight(30, 0.5);
+            drivetrain.straight(10, 0.5);
             drivetrain.turn(90, 0.5);
-            drivetrain.straight(30, 0.5);
+            drivetrain.straight(10, 0.5);
 
     .. tab-item:: Blockly
 
