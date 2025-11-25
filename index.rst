@@ -56,15 +56,6 @@ Getting Started
 .. toctree:: 
    :maxdepth: 1
    :hidden:
-   :caption: Sensors and Feedback
-
-   course/measuring_distance/index
-   course/measuring_distance/intro
-
-
-.. toctree:: 
-   :maxdepth: 1
-   :hidden:
    :caption: Sensing and Following Lines
    
    course/line_following/index
@@ -73,6 +64,13 @@ Getting Started
    course/line_following/proportional_control
    course/line_following/proportional_control_with_two_sensors
 
+.. toctree:: 
+   :maxdepth: 1
+   :hidden:
+   :caption: Sensors and Feedback
+
+   course/measuring_distance/index
+   course/measuring_distance/intro
 
 .. toctree:: 
    :maxdepth: 1
