@@ -105,7 +105,8 @@ can now write a function to trace any regular polygon!
         for i in range(int(numSides)):
             drivetrain.straight(sideLength);
             drivetrain.turn((360 / numSides));
-    
+            
+    board.wait_for_button();
     polygon(10,4);
 
 
